@@ -1,0 +1,21 @@
+[project]
+name = "tfl"
+version = "0.1.0"
+description = "Get data for London Transport."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+ "httpx>=0.28.1",
+ "mcp>=1.1.2",
+ "python-dotenv>=1.0.1",
+]
+[[project.authors]]
+name = "qcasares"
+email = "qcasares@gmail.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+tfl = "tfl:main"
